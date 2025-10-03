@@ -1,0 +1,64 @@
+{
+  "name": "popup-on-save",
+  "displayName": "Popup on Save",
+  "description": "Extensión divertida que muestra mensajes aleatorios cada vez que guardas un archivo en VS Code",
+  "version": "0.0.1",
+  "publisher": "beneqinformatica",
+  "author": {
+    "name": "Beneq",
+    "email": "benitoquib98@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benitoquib/popup-on-save.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benitoquib/popup-on-save/issues"
+  },
+  "homepage": "https://github.com/benitoquib/popup-on-save#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "popup",
+    "save",
+    "notification",
+    "funny",
+    "messages",
+    "español",
+    "humor",
+    "productivity"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#FF6B6B",
+    "theme": "dark"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.104.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
