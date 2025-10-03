@@ -2,7 +2,7 @@
   "name": "popup-on-save",
   "displayName": "Popup on Save",
   "description": "Extensión divertida que muestra mensajes aleatorios cada vez que guardas un archivo en VS Code",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "publisher": "beneqinformatica",
   "author": {
     "name": "Beneq",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/benitoquib/popup-on-save#readme",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.104.0"
   },
   "categories": [
     "Other",
@@ -39,7 +39,10 @@
     "color": "#FF6B6B",
     "theme": "dark"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished",
+    "onSave"
+  ],
   "main": "./out/extension.js",
   "contributes": {},
   "scripts": {
