@@ -1,50 +1,53 @@
-# Popup on Save Extension
+# Changelog
 
-Una extensión divertida para VS Code que muestra mensajes aleatorios cada vez que guardas un archivo.
+## [1.0.1] - 2025-10-02
 
-## 📋 Descripción
+### Cambiado
+- 🔧 **Mejorado activación de la extensión**: Añadidos eventos de activación específicos
+  - `onStartupFinished`: Asegura que la extensión se active al iniciar VS Code
+  - `onSave`: Optimiza la activación para el evento de guardado
+- ⚡ **Mejor rendimiento**: Activación más eficiente y predecible
+- 🛠️ **Estabilidad mejorada**: Reduce posibles fallos de activación
 
-Esta extensión añade un toque de humor y personalidad a tu experiencia de desarrollo mostrando mensajes aleatorios y divertidos cada vez que guardas un archivo en VS Code. Los mensajes van desde motivacionales hasta cómicos, haciendo que el acto de guardar código sea más entretenido.
+## [0.0.1] - 2025-10-02
 
-## ✨ Características
+### Añadido
+- ✨ **Funcionalidad inicial**: Mensajes aleatorios cada vez que guardas un archivo
+- 🎭 **17 mensajes divertidos** en español con emojis variados:
+  - Mensajes motivacionales: "¡Archivo guardado con éxito! 🚀"
+  - Mensajes graciosos: "Ese save te quedó épico 🔥"
+  - Mensajes reflexivos: "Cada save te acerca a la gloria... o a un bug 😂"
+  - Mensajes de descanso: "¡Guardado! Ahora a tomar un café ☕"
+  - Mensajes técnicos con humor: "Recuerda: un save al día mantiene al bug lejos 🐞"
+  - Mensajes personalizados del autor
+- 🚀 **Activación automática** al iniciar VS Code
+- ⚡ **Funcionamiento inmediato** sin configuración necesaria
+- 🎯 **Integración perfecta** con el evento `onDidSaveTextDocument` de VS Code
 
-- **Mensajes Aleatorios**: Muestra uno de 17 mensajes diferentes cada vez que guardas
-- **Activación Automática**: Se activa automáticamente al iniciar VS Code
-- **Sin Configuración**: Funciona inmediatamente después de la instalación
-- **Mensajes en Español**: Todos los mensajes están en español con emojis divertidos
+### Configuración del Entorno
+- ⚙️ **VS Code Engine**: Mínimo v1.104.0
+- 🏗️ **TypeScript**: Configuración con compilación estricta
+- 📝 **ESLint**: Configuración con TypeScript y reglas modernas
+- 🧪 **Testing**: Framework configurado con VS Code Test
+- 📦 **Build**: Scripts de compilación y empaquetado con VSCE
 
-## 🚀 Instalación
+### Compatibilidad
+- ✅ Compatible con VS Code v1.104.0 y superiores
+- ✅ Funciona en Windows, macOS y Linux
+- ✅ Sin dependencias externas en runtime
+- ✅ Tamaño ligero de la extensión
 
-1. Abre VS Code
-2. Ve a la pestaña de Extensiones (Ctrl+Shift+X)
-3. Busca "popup-on-save"
-4. Haz clic en "Instalar"
+---
 
-## 💻 Uso
 
-¡No hay configuración necesaria! Simplemente:
+---
 
-1. Instala la extensión
-2. Abre cualquier archivo
-3. Haz cambios y guarda (Ctrl+S)
-4. Disfruta de los mensajes divertidos
+## Enlaces
 
-## 🎭 Ejemplos de Mensajes
-
-La extensión incluye mensajes como:
-
-- "¡Archivo guardado con éxito! 🚀"
-- "Ese save te quedó épico 🔥"
-- "Cada save te acerca a la gloria... o a un bug 😂"
-- "¡Guardado! Ahora a tomar un café ☕"
-- "Recuerda: un save al día mantiene al bug lejos 🐞"
-- Y muchos más mensajes divertidos...
-
-## 📞 Contacto
-
-- **Autor**: Beneq
-- **Email**: benitoquib98@gmail.com
-- **GitHub**: benitoquib
+- � [Reportar Bugs](https://github.com/benitoquib/popup-on-save/issues)
+- 💡 [Solicitar Características](https://github.com/benitoquib/popup-on-save/issues)
+- 📖 [Documentación](https://github.com/benitoquib/popup-on-save#readme)
+- 🏪 [Marketplace](https://marketplace.visualstudio.com/items?itemName=beneqinformatica.popup-on-save)
 
 ---
 
