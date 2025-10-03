@@ -1,8 +1,8 @@
 {
   "name": "popup-on-save",
   "displayName": "Popup on Save",
-  "description": "Extensión divertida que muestra mensajes aleatorios cada vez que guardas un archivo en VS Code",
-  "version": "1.0.1",
+  "description": "Extensión divertida que muestra mensajes aleatorios y sonidos cada vez que guardas un archivo en VS Code",
+  "version": "1.1.0",
   "publisher": "beneqinformatica",
   "author": {
     "name": "Beneq",
@@ -44,7 +44,30 @@
     "onSave"
   ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "configuration": {
+      "title": "Popup on Save",
+      "properties": {
+        "popupOnSave.enableSounds": {
+          "type": "boolean",
+          "default": true,
+          "description": "Reproducir sonidos al guardar archivos"
+        },
+        "popupOnSave.soundVolume": {
+          "type": "number",
+          "default": 0.5,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Volumen de los sonidos (0.0 a 1.0)"
+        },
+        "popupOnSave.enableMessages": {
+          "type": "boolean",
+          "default": true,
+          "description": "Mostrar mensajes popup al guardar archivos"
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

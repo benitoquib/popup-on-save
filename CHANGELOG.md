@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0] - 2025-10-02
+
+### Añadido
+- 🎵 **¡NUEVA FUNCIONALIDAD!** Sonidos aleatorios al guardar archivos
+  - 5 sonidos diferentes que se reproducen aleatoriamente
+  - Integración perfecta con Windows usando PowerShell
+  - Archivos de audio incluidos en la extensión
+- ⚙️ **Configuraciones personalizables**:
+  - `popupOnSave.enableSounds`: Activar/desactivar sonidos (por defecto: activado)
+  - `popupOnSave.soundVolume`: Control de volumen (0.0 a 1.0, por defecto: 0.5)
+  - `popupOnSave.enableMessages`: Activar/desactivar mensajes popup (por defecto: activado)
+- 🔧 **Panel de configuración** accesible desde Settings > Extensions > Popup on Save
+
+### Mejorado
+- 🎯 **Experiencia de usuario**: Ahora puedes personalizar completamente la extensión
+- 🛡️ **Manejo de errores**: Verificación de archivos de audio antes de reproducir
+- 📝 **Código más limpio**: Mejor organización y manejo de configuraciones
+
 ## [1.0.1] - 2025-10-02
 
 ### Cambiado
